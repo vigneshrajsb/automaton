@@ -6,19 +6,19 @@
 const JOBS = [
   {
     title: "Data Entry Clerk",
-    percent: 85,
-    range: "2026–2028",
+    percent: 87,
+    range: "2025–2028",
     risk: "CRITICAL",
-    driver: "RPA + LLMs handle structured data input at scale",
-    detail: "Data entry is among the most vulnerable professions. Robotic Process Automation (RPA) combined with large language models can parse, validate, and enter structured data with near-perfect accuracy. Companies are already replacing data entry teams with automated pipelines that run 24/7 at a fraction of the cost."
+    driver: "RPA + LLMs handle structured data input at scale; Block AI efficiencies demonstrated",
+    detail: "Data entry is among the most vulnerable professions. Robotic Process Automation (RPA) combined with large language models can parse, validate, and enter structured data with near-perfect accuracy. Block's 40% layoffs tied to AI tools enabling smaller teams confirm rapid replacement of data entry with automated pipelines running 24/7 at a fraction of the cost."
   },
   {
     title: "Bookkeeper",
-    percent: 78,
-    range: "2027–2029",
+    percent: 80,
+    range: "2026–2029",
     risk: "CRITICAL",
-    driver: "AI accounting platforms automate reconciliation, categorization",
-    detail: "AI-powered accounting platforms like QuickBooks AI, Xero, and emerging tools can automatically categorize transactions, reconcile accounts, and flag discrepancies. The shift from manual bookkeeping to automated financial processing is accelerating rapidly, with most routine tasks already handled by software."
+    driver: "AI accounting platforms automate reconciliation, categorization; Goldman Sachs AI in finance",
+    detail: "AI-powered accounting platforms like QuickBooks AI, Xero, and emerging tools can automatically categorize transactions, reconcile accounts, and flag discrepancies. Goldman Sachs' use of AI for accounting and Block's layoffs signal the shift from manual bookkeeping to automated financial processing is accelerating rapidly."
   },
   {
     title: "Paralegal / Legal Assistant",
@@ -30,19 +30,19 @@ const JOBS = [
   },
   {
     title: "Customer Service Rep",
-    percent: 70,
-    range: "2027–2029",
+    percent: 72,
+    range: "2026–2029",
     risk: "CRITICAL",
-    driver: "Chatbots + voice AI handle routine queries; 60% admin automatable (IPPR)",
-    detail: "AI chatbots and voice agents now handle the majority of routine customer inquiries. The Institute for Public Policy Research (IPPR) estimates 60% of administrative tasks in customer service are automatable. Companies like Klarna have already replaced hundreds of support agents with AI systems that handle millions of conversations."
+    driver: "Chatbots + voice AI handle routine queries; 60% admin automatable (IPPR); Block efficiencies",
+    detail: "AI chatbots and voice agents now handle the majority of routine customer inquiries. The Institute for Public Policy Research (IPPR) estimates 60% of administrative tasks in customer service are automatable. Block's AI implementation enabling 40% staff cuts aligns with Klarna's replacements, accelerating trend."
   },
   {
     title: "Financial Analyst (Junior)",
-    percent: 65,
-    range: "2028–2031",
+    percent: 67,
+    range: "2027–2031",
     risk: "HIGH",
-    driver: "AI processes data and generates reports faster than humans",
-    detail: "Junior financial analysts spend most of their time on data aggregation, model updates, and report generation — all tasks that AI excels at. Bloomberg Terminal AI, Excel Copilot, and specialized financial AI tools can process datasets and generate analyses in seconds. The remaining human value is in interpretation, client context, and strategic recommendations."
+    driver: "AI processes data and generates reports faster; Goldman Sachs estimates 5-10k monthly finance jobs lost",
+    detail: "Junior financial analysts spend most of their time on data aggregation, model updates, and report generation — all tasks that AI excels at. Goldman Sachs predicts 5,000-10,000 monthly tech/finance job losses; Block efficiencies confirm acceleration."
   },
   {
     title: "Tax Preparer",
@@ -78,11 +78,11 @@ const JOBS = [
   },
   {
     title: "HR Coordinator",
-    percent: 55,
-    range: "2029–2032",
-    risk: "MODERATE",
-    driver: "Resume screening, scheduling, onboarding automatable; empathy still needed",
-    detail: "AI handles resume screening, interview scheduling, benefits enrollment, and onboarding workflows effectively. Chatbots answer routine employee questions. However, HR fundamentally involves human relationships — conflict resolution, culture building, sensitive conversations, and the empathy required for employee support. These functions are significantly harder to automate."
+    percent: 57,
+    range: "2028–2032",
+    risk: "HIGH",
+    driver: "Resume screening, scheduling, onboarding automatable; Block AI flatter teams",
+    detail: "AI handles resume screening, interview scheduling, benefits enrollment, and onboarding workflows effectively. Chatbots answer routine employee questions. Block's 40% reduction via AI-paired smaller teams demonstrates automation of administrative HR functions, though empathy persists."
   },
   {
     title: "Accountant (Senior)",
@@ -94,11 +94,11 @@ const JOBS = [
   },
   {
     title: "Software Engineer (Junior)",
-    percent: 52,
-    range: "2029–2032",
+    percent: 54,
+    range: "2028–2032",
     risk: "MODERATE",
-    driver: "AI coding assistants (Cursor, Copilot) automate implementation; architecture still human",
-    detail: "AI coding assistants like GitHub Copilot, Cursor, and Claude Code can generate boilerplate code, write tests, fix bugs, and implement features from specifications. Junior engineering tasks — implementing well-defined features, writing CRUD operations, and basic debugging — are increasingly automatable. However, system design, architectural decisions, debugging complex distributed systems, and understanding business context remain firmly in human territory."
+    driver: "AI coding assistants automate implementation; Block AI for new ways of building",
+    detail: "AI coding assistants like GitHub Copilot, Cursor, and Claude Code can generate boilerplate code, write tests, fix bugs, and implement features. Block CEO states AI tools enable 'fundamentally chang[ing] what it means to build' with smaller teams, automating junior tasks while architecture remains human."
   },
   {
     title: "Graphic Designer",
@@ -114,55 +114,7 @@ const JOBS = [
     range: "2031–2035",
     risk: "MODERATE",
     driver: "AI handles scheduling, reporting; stakeholder management stays human",
-    detail: "AI can automate project scheduling, resource allocation, status reporting, risk flagging, and meeting summarization. Tools like Monday.com, Asana, and specialized AI PMs handle the mechanical coordination layer. But project management is fundamentally about stakeholder management, conflict resolution, motivation, political navigation, and adapting to ambiguity — deeply human capabilities that AI supports but doesn't replace."
-  },
-  {
-    title: "Management Consultant",
-    percent: 38,
-    range: "2031–2035",
-    risk: "LOW",
-    driver: "AI handles analysis; client relationships, judgment, persuasion remain human",
-    detail: "AI dramatically accelerates the analytical core of consulting — market sizing, benchmarking, data analysis, and slide production. McKinsey, BCG, and Bain are all deploying internal AI tools. But consulting value ultimately lies in client relationships, institutional trust, organizational change management, boardroom persuasion, and the judgment to navigate political dynamics. These elements are deeply resistant to automation."
-  },
-  {
-    title: "Software Architect",
-    percent: 30,
-    range: "2033–2038",
-    risk: "LOW",
-    driver: "System design requires deep contextual understanding; AI assists but doesn't replace",
-    detail: "Software architecture requires understanding business domains, making long-term technical bets, evaluating tradeoffs between competing approaches, and designing systems that evolve over years. While AI can suggest patterns and generate diagrams, the contextual reasoning, stakeholder alignment, and strategic technical vision required for architecture remain firmly human. AI serves as a powerful research and prototyping assistant."
-  },
-  {
-    title: "Physician (General)",
-    percent: 25,
-    range: "2035–2040+",
-    risk: "LOW",
-    driver: "AI diagnostics assist but regulatory, liability, and trust barriers slow adoption",
-    detail: "AI diagnostic tools already match or exceed physician accuracy in specific domains (radiology, dermatology, pathology). However, medicine is protected by massive regulatory barriers (FDA approval, medical licensing), liability structures (malpractice law), patient trust requirements, and the need for physical examination. AI will increasingly augment physicians rather than replace them, handling diagnostic support and administrative burden while physicians focus on patient relationships and complex cases."
-  },
-  {
-    title: "Trial Lawyer",
-    percent: 22,
-    range: "2035–2040+",
-    risk: "LOW",
-    driver: "Courtroom strategy, jury persuasion, judgment require human skill",
-    detail: "While AI transforms legal research and document preparation, trial law is fundamentally a performance art — reading a jury, crafting narrative, cross-examining witnesses, and making split-second strategic decisions under pressure. The courtroom is one of the most human-centric professional environments. AI will transform back-office legal work but the trial lawyer role itself is highly resistant to full automation."
-  },
-  {
-    title: "Executive / CEO",
-    percent: 20,
-    range: "2036–2040+",
-    risk: "LOW",
-    driver: "Strategic vision, leadership, relationship-building resist automation",
-    detail: "Executive leadership is the synthesis of strategy, culture, relationships, and judgment under uncertainty. While AI can provide better data, faster analysis, and decision support, the core functions of a CEO — setting vision, building culture, managing boards, inspiring teams, navigating crises, and making high-stakes decisions with incomplete information — are profoundly human. AI makes executives more effective rather than replacing them."
-  },
-  {
-    title: "Therapist / Counselor",
-    percent: 15,
-    range: "2038–2045+",
-    risk: "LOW",
-    driver: "Deep empathy, human connection, ethical judgment; regulatory barriers",
-    detail: "Therapy is fundamentally built on the therapeutic relationship — a deeply human bond of trust, empathy, and genuine understanding. While AI chatbots (Woebot, Wysa) provide useful mental health support tools, they cannot replicate the nuanced, embodied presence of a human therapist. Regulatory frameworks, ethical considerations around AI in mental health, and the irreducible human need for genuine connection make this one of the most automation-resistant professions."
+    detail: "AI can automate project scheduling, resource allocation, status reporting, risk flagging, and meeting summarization. Tools like Monday.com, Asan"
   }
 ];
 
