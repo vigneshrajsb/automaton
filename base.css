@@ -1,0 +1,248 @@
+/* base.css — AUTOMATON Cyberpunk Design System */
+
+/* ============================================
+   BOX MODEL RESET
+   ============================================ */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ============================================
+   HTML DEFAULTS
+   ============================================ */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--space-16);
+}
+
+/* ============================================
+   TYPE SCALE (Fluid)
+   ============================================ */
+:root {
+  --text-xs:   clamp(0.75rem,  0.7rem  + 0.25vw, 0.875rem);
+  --text-sm:   clamp(0.875rem, 0.8rem  + 0.35vw, 1rem);
+  --text-base: clamp(1rem,     0.9rem  + 0.5vw,  1.125rem);
+  --text-lg:   clamp(1.125rem, 0.95rem + 0.85vw, 1.5rem);
+  --text-xl:   clamp(1.5rem,   1rem    + 1.5vw,  2.25rem);
+  --text-2xl:  clamp(2rem,     1.2rem  + 2.5vw,  3.5rem);
+  --text-3xl:  clamp(2.5rem,   1rem    + 4vw,    5rem);
+  --text-hero: clamp(3rem,     0.5rem  + 7vw,    8rem);
+}
+
+/* ============================================
+   4px SPACING SYSTEM
+   ============================================ */
+:root {
+  --space-1:  0.25rem;   /*  4px */
+  --space-2:  0.5rem;    /*  8px */
+  --space-3:  0.75rem;   /* 12px */
+  --space-4:  1rem;      /* 16px */
+  --space-5:  1.25rem;   /* 20px */
+  --space-6:  1.5rem;    /* 24px */
+  --space-8:  2rem;      /* 32px */
+  --space-10: 2.5rem;    /* 40px */
+  --space-12: 3rem;      /* 48px */
+  --space-16: 4rem;      /* 64px */
+  --space-20: 5rem;      /* 80px */
+  --space-24: 6rem;      /* 96px */
+  --space-32: 8rem;      /* 128px */
+}
+
+/* ============================================
+   CYBERPUNK PALETTE — DARK ONLY
+   No light mode — cyberpunk IS dark mode
+   ============================================ */
+:root {
+  /* --- Surfaces (Deep near-black with blue/purple tints) --- */
+  --color-bg:              #0a0a12;
+  --color-surface:         #0d0f1a;
+  --color-surface-2:       #12141f;
+  --color-surface-offset:  #181a28;
+  --color-surface-offset-2: #1e2035;
+  --color-surface-dynamic: #252840;
+  --color-divider:         #2a2d48;
+  --color-border:          #33365a;
+
+  /* --- Text --- */
+  --color-text:            #e0e0e0;
+  --color-text-muted:      #8a8a9a;
+  --color-text-faint:      #555568;
+  --color-text-inverse:    #0a0a12;
+
+  /* --- Primary Accent (Neon Cyan) --- */
+  --color-primary:         #00f0ff;
+  --color-primary-hover:   #00c8d6;
+  --color-primary-active:  #009daa;
+  --color-primary-highlight: rgba(0, 240, 255, 0.08);
+  --color-primary-glow:    rgba(0, 240, 255, 0.35);
+
+  /* --- Critical / Danger (Hot Pink / Magenta) --- */
+  --color-error:           #ff2d6f;
+  --color-error-hover:     #d6245d;
+  --color-error-active:    #aa1c4a;
+  --color-error-highlight: rgba(255, 45, 111, 0.08);
+  --color-error-glow:      rgba(255, 45, 111, 0.35);
+
+  /* --- Moderate / Purple --- */
+  --color-purple:          #9d4edd;
+  --color-purple-hover:    #8340bb;
+  --color-purple-active:   #6b3399;
+  --color-purple-highlight: rgba(157, 78, 221, 0.08);
+  --color-purple-glow:     rgba(157, 78, 221, 0.35);
+
+  /* --- Warning / Amber --- */
+  --color-warning:         #f0c040;
+  --color-warning-hover:   #d4a830;
+  --color-warning-active:  #b89020;
+  --color-warning-highlight: rgba(240, 192, 64, 0.08);
+  --color-warning-glow:    rgba(240, 192, 64, 0.35);
+
+  /* --- Success / Low risk (Neon Green) --- */
+  --color-success:         #00e68a;
+  --color-success-hover:   #00c278;
+  --color-success-active:  #009d62;
+  --color-success-highlight: rgba(0, 230, 138, 0.08);
+  --color-success-glow:    rgba(0, 230, 138, 0.35);
+
+  /* --- Radius --- */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-full: 9999px;
+
+  /* --- Transitions --- */
+  --transition-interactive: 180ms cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* --- Shadows (cyberpunk glow style) --- */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.6);
+
+  /* --- Content widths --- */
+  --content-narrow: 640px;
+  --content-default: 960px;
+  --content-wide: 1200px;
+  --content-full: 100%;
+
+  /* --- Font families --- */
+  --font-display: 'Orbitron', 'Arial Black', sans-serif;
+  --font-heading: 'Rajdhani', 'Arial', sans-serif;
+  --font-body: 'Rajdhani', 'Arial', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+}
+
+/* ============================================
+   CORE BODY DEFAULTS
+   ============================================ */
+body {
+  min-height: 100dvh;
+  line-height: 1.6;
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+
+/* ============================================
+   MEDIA DEFAULTS
+   ============================================ */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul[role="list"], ol[role="list"] {
+  list-style: none;
+}
+
+/* ============================================
+   FORM ELEMENTS
+   ============================================ */
+input, button, textarea, select {
+  font: inherit;
+  color: inherit;
+}
+
+/* ============================================
+   TEXT WRAP
+   ============================================ */
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+  line-height: 1.15;
+}
+
+p, li, figcaption {
+  text-wrap: pretty;
+  max-width: 72ch;
+}
+
+/* ============================================
+   SELECTION
+   ============================================ */
+::selection {
+  background: rgba(0, 240, 255, 0.25);
+  color: var(--color-text);
+}
+
+/* ============================================
+   FOCUS
+   ============================================ */
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
+}
+
+/* ============================================
+   REDUCED MOTION
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ============================================
+   BUTTON RESET
+   ============================================ */
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+/* ============================================
+   TABLE DEFAULTS
+   ============================================ */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* ============================================
+   SCREEN READER ONLY
+   ============================================ */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
