@@ -9,16 +9,16 @@ const JOBS = [
     percent: 87,
     range: "2025–2028",
     risk: "CRITICAL",
-    driver: "RPA + LLMs handle structured data input at scale; Block AI efficiencies demonstrated",
-    detail: "Data entry is among the most vulnerable professions. Robotic Process Automation (RPA) combined with large language models can parse, validate, and enter structured data with near-perfect accuracy. Block's 40% layoffs tied to AI tools enabling smaller teams confirm rapid replacement of data entry with automated pipelines running 24/7 at a fraction of the cost."
+    driver: "RPA + LLMs handle structured data input at scale; Block's 40% AI-driven layoffs confirm replacement",
+    detail: "Data entry is among the most vulnerable professions. Robotic Process Automation (RPA) combined with large language models can parse, validate, and enter structured data with near-perfect accuracy. Block's announcement of 40% layoffs (4,000 jobs) on February 27, 2026, explicitly linked to AI-driven efficiency gains with smaller teams, confirms rapid replacement of data entry with automated pipelines running 24/7 at a fraction of the cost.[1][4]"
   },
   {
     title: "Bookkeeper",
-    percent: 80,
+    percent: 83,
     range: "2026–2029",
     risk: "CRITICAL",
-    driver: "AI accounting platforms automate reconciliation, categorization; Goldman Sachs AI in finance",
-    detail: "AI-powered accounting platforms like QuickBooks AI, Xero, and emerging tools can automatically categorize transactions, reconcile accounts, and flag discrepancies. Goldman Sachs' use of AI for accounting and Block's layoffs signal the shift from manual bookkeeping to automated financial processing is accelerating rapidly."
+    driver: "AI accounting platforms automate reconciliation, categorization; Goldman Sachs forecasts + Block layoffs",
+    detail: "AI-powered accounting platforms like QuickBooks AI, Xero, and emerging tools can automatically categorize transactions, reconcile accounts, and flag discrepancies. Goldman Sachs highlights accounting as highly automatable with 5-10k monthly finance job losses; Block's 40% layoffs and Mustafa Suleyman's warning of full white-collar automation in 12-18 months signal rapid shift from manual bookkeeping.[1][4]"
   },
   {
     title: "Paralegal / Legal Assistant",
@@ -33,16 +33,16 @@ const JOBS = [
     percent: 72,
     range: "2026–2029",
     risk: "CRITICAL",
-    driver: "Chatbots + voice AI handle routine queries; 60% admin automatable (IPPR); Block efficiencies",
-    detail: "AI chatbots and voice agents now handle the majority of routine customer inquiries. The Institute for Public Policy Research (IPPR) estimates 60% of administrative tasks in customer service are automatable. Block's AI implementation enabling 40% staff cuts aligns with Klarna's replacements, accelerating trend."
+    driver: "Chatbots + voice AI handle routine queries; 60% admin automatable; Block efficiencies",
+    detail: "AI chatbots and voice agents now handle the majority of routine customer inquiries. IPPR estimates 60% of administrative tasks automatable. Block's AI implementation enabling 40% staff cuts aligns with broader efficiency trends across admin roles.[1][4]"
   },
   {
     title: "Financial Analyst (Junior)",
-    percent: 67,
+    percent: 70,
     range: "2027–2031",
     risk: "HIGH",
-    driver: "AI processes data and generates reports faster; Goldman Sachs estimates 5-10k monthly finance jobs lost",
-    detail: "Junior financial analysts spend most of their time on data aggregation, model updates, and report generation — all tasks that AI excels at. Goldman Sachs predicts 5,000-10,000 monthly tech/finance job losses; Block efficiencies confirm acceleration."
+    driver: "AI processes data and generates reports faster; Goldman Sachs 5-10k monthly finance jobs + Block",
+    detail: "Junior financial analysts spend most of their time on data aggregation, model updates, and report generation — all tasks that AI excels at. Goldman Sachs predicts 5,000-10,000 monthly tech/finance job losses to 4.5% unemployment; Block's AI efficiencies confirm acceleration in finance roles.[1][4]"
   },
   {
     title: "Tax Preparer",
@@ -78,27 +78,27 @@ const JOBS = [
   },
   {
     title: "HR Coordinator",
-    percent: 57,
+    percent: 60,
     range: "2028–2032",
     risk: "HIGH",
-    driver: "Resume screening, scheduling, onboarding automatable; Block AI flatter teams",
-    detail: "AI handles resume screening, interview scheduling, benefits enrollment, and onboarding workflows effectively. Chatbots answer routine employee questions. Block's 40% reduction via AI-paired smaller teams demonstrates automation of administrative HR functions, though empathy persists."
+    driver: "Resume screening, scheduling, onboarding automatable; Block AI enables 40% flatter teams",
+    detail: "AI handles resume screening, interview scheduling, benefits enrollment, and onboarding workflows effectively. Chatbots answer routine employee questions. Block's 40% workforce reduction via AI-paired smaller teams explicitly demonstrates automation of administrative HR functions, though empathy persists.[1][4]"
   },
   {
     title: "Accountant (Senior)",
-    percent: 50,
+    percent: 53,
     range: "2030–2034",
     risk: "MODERATE",
-    driver: "Transactional work automated; advisory/strategy roles persist (McKinsey)",
-    detail: "McKinsey estimates that while transactional accounting work is rapidly automating, the advisory and strategic dimensions of senior accounting — tax planning, M&A due diligence, audit judgment, and regulatory interpretation — require human expertise that AI assists but doesn't replace. Senior accountants are evolving into strategic advisors who leverage AI tools for the analytical heavy lifting."
+    driver: "Transactional work automated; advisory persists but Goldman/Block signal faster shift",
+    detail: "McKinsey estimates that while transactional accounting work is rapidly automating, advisory and strategic dimensions require human expertise that AI assists. Goldman Sachs flags accounting as highly automatable with monthly losses; Block efficiencies and Suleyman's 12-18 month timeline indicate faster encroachment on senior transactional tasks.[1][4]"
   },
   {
     title: "Software Engineer (Junior)",
     percent: 54,
     range: "2028–2032",
     risk: "MODERATE",
-    driver: "AI coding assistants automate implementation; Block AI for new ways of building",
-    detail: "AI coding assistants like GitHub Copilot, Cursor, and Claude Code can generate boilerplate code, write tests, fix bugs, and implement features. Block CEO states AI tools enable 'fundamentally chang[ing] what it means to build' with smaller teams, automating junior tasks while architecture remains human."
+    driver: "AI coding assistants automate implementation; Block AI changes building with smaller teams",
+    detail: "AI coding assistants like GitHub Copilot, Cursor, and Claude Code can generate boilerplate code, write tests, fix bugs, and implement features. Block CEO states AI tools enable 'fundamentally chang[ing] what it means to build' with smaller teams, automating junior tasks while architecture remains human.[1][4]"
   },
   {
     title: "Graphic Designer",
