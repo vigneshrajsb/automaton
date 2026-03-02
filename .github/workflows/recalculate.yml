@@ -1,0 +1,56 @@
+name: AUTOMATON Nightly Recalculation
+
+on:
+  schedule:
+    - cron: '0 8 * * *'  # midnight PST / 1am PDT
+  workflow_dispatch:
+
+jobs:
+  recalculate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run recalculation
+        id: recalc
+        env:
+          PERPLEXITY_API_KEY: ${{ secrets.PERPLEXITY_API_KEY }}
+        run: python recalculate.py
+
+      - name: Commit and push updates
+        if: steps.recalc.outputs.changes_made == 'true'
+        run: |
+          git config user.name "AUTOMATON Bot"
+          git config user.email "actions@github.com"
+          git add app.js index.html
+          git commit -m "chore: nightly recalculation $(date -u '+%Y-%m-%d')"
+          git push
+
+      - name: Write job summary
+        if: always()
+        env:
+          CHANGES_MADE: ${{ steps.recalc.outputs.changes_made }}
+          SUMMARY: ${{ steps.recalc.outputs.summary }}
+          CHANGE_LOG: ${{ steps.recalc.outputs.change_log }}
+        run: |
+          if [ "$CHANGES_MADE" = "true" ]; then
+            echo "## Changes applied" >> $GITHUB_STEP_SUMMARY
+            echo "$SUMMARY" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "$CHANGE_LOG" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "## No changes" >> $GITHUB_STEP_SUMMARY
+            echo "$SUMMARY" >> $GITHUB_STEP_SUMMARY
+          fi
