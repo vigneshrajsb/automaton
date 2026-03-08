@@ -6,43 +6,43 @@
 const JOBS = [
   {
     title: "Data Entry Clerk",
-    percent: 87,
-    range: "2025–2028",
+    percent: 89,
+    range: "2025–2027",
     risk: "CRITICAL",
-    driver: "RPA + LLMs handle structured data input at scale; Block's 40% AI-driven layoffs confirm replacement",
-    detail: "Data entry is among the most vulnerable professions. Robotic Process Automation (RPA) combined with large language models can parse, validate, and enter structured data with near-perfect accuracy. Block's announcement of 40% layoffs (4,000 jobs) on February 27, 2026, explicitly linked to AI-driven efficiency gains with smaller teams, confirms rapid replacement of data entry with automated pipelines running 24/7 at a fraction of the cost.[1][4]"
+    driver: "GPT-5.4 computer-use automates Excel/Sheets natively; RPA + LLMs + Block layoffs",
+    detail: "GPT-5.4's native integration with Excel/Google Sheets and computer control (via screenshots/mouse/keyboard) enables full automation of data input, validation, and manipulation in real apps. Builds on RPA/LLMs for structured data; Block's 40% AI layoffs confirm replacement acceleration.[2][3][4]"
   },
   {
     title: "Bookkeeper",
-    percent: 83,
-    range: "2026–2029",
+    percent: 85,
+    range: "2025–2028",
     risk: "CRITICAL",
-    driver: "AI accounting platforms automate reconciliation, categorization; Goldman Sachs forecasts + Block layoffs",
-    detail: "AI-powered accounting platforms like QuickBooks AI, Xero, and emerging tools can automatically categorize transactions, reconcile accounts, and flag discrepancies. Goldman Sachs highlights accounting as highly automatable with 5-10k monthly finance job losses; Block's 40% layoffs and Mustafa Suleyman's warning of full white-collar automation in 12-18 months signal rapid shift from manual bookkeeping.[1][4]"
+    driver: "GPT-5.4 Excel/Sheets automation, reconciliation agents; Goldman + Block",
+    detail: "GPT-5.4's computer-use capabilities automate reconciliation, categorization in Excel/Sheets directly. 1M context handles large ledgers; agentic workflows flag discrepancies. Goldman Sachs forecasts and Block's layoffs signal rapid shift.[2][3][4]"
   },
   {
     title: "Paralegal / Legal Assistant",
-    percent: 72,
-    range: "2027–2030",
+    percent: 74,
+    range: "2026–2029",
     risk: "CRITICAL",
-    driver: "Contract review AI (Harvey, CoCounsel) at 90% accuracy",
-    detail: "Legal AI tools like Harvey, CoCounsel (by Thomson Reuters), and Casetext can review contracts, conduct legal research, and draft standard documents. Stanford studies show these tools achieve 90%+ accuracy on contract review tasks. The bulk of paralegal work — document review, citation checking, and brief drafting — is increasingly automatable."
+    driver: "GPT-5.4 1M context for doc review, agentic workflows; Harvey-like accuracy",
+    detail: "GPT-5.4's 1M token context and reduced hallucinations (33% fewer errors) enhance contract review/research; agentic tools integrate with legal apps via computer-use. Builds on 90% accuracy of prior tools.[2][3]"
   },
   {
     title: "Customer Service Rep",
-    percent: 72,
-    range: "2026–2029",
+    percent: 74,
+    range: "2025–2028",
     risk: "CRITICAL",
-    driver: "Chatbots + voice AI handle routine queries; 60% admin automatable; Block efficiencies",
-    detail: "AI chatbots and voice agents now handle the majority of routine customer inquiries. IPPR estimates 60% of administrative tasks automatable. Block's AI implementation enabling 40% staff cuts aligns with broader efficiency trends across admin roles.[1][4]"
+    driver: "GPT-5.3 Instant reduced refusals/hallucinations for queries; GPT-5.4 agentic; Block",
+    detail: "GPT-5.3 Instant improves factual responses/web synthesis with fewer refusals; GPT-5.4 enables agentic handling of complex queries. Supports 24/7 automation of routine inquiries; Block efficiencies align.[2][4]"
   },
   {
     title: "Financial Analyst (Junior)",
-    percent: 70,
-    range: "2027–2031",
+    percent: 72,
+    range: "2026–2030",
     risk: "HIGH",
-    driver: "AI processes data and generates reports faster; Goldman Sachs 5-10k monthly finance jobs + Block",
-    detail: "Junior financial analysts spend most of their time on data aggregation, model updates, and report generation — all tasks that AI excels at. Goldman Sachs predicts 5,000-10,000 monthly tech/finance job losses to 4.5% unemployment; Block's AI efficiencies confirm acceleration in finance roles.[1][4]"
+    driver: "GPT-5.4 1M context for data/models, computer-use for Excel; Goldman + Block",
+    detail: "GPT-5.4 excels in professional knowledge work (83% GDPval), with 1M tokens for aggregating datasets/models and computer-use for Excel analysis/reporting. Automates data aggregation and report generation; Goldman/Block confirm finance acceleration.[2][3][4]"
   },
   {
     title: "Tax Preparer",
@@ -94,11 +94,11 @@ const JOBS = [
   },
   {
     title: "Software Engineer (Junior)",
-    percent: 54,
-    range: "2028–2032",
-    risk: "MODERATE",
-    driver: "AI coding assistants automate implementation; Block AI changes building with smaller teams",
-    detail: "AI coding assistants like GitHub Copilot, Cursor, and Claude Code can generate boilerplate code, write tests, fix bugs, and implement features. Block CEO states AI tools enable 'fundamentally chang[ing] what it means to build' with smaller teams, automating junior tasks while architecture remains human.[1][4]"
+    percent: 56,
+    range: "2027–2031",
+    risk: "HIGH",
+    driver: "GPT-5.4 native computer-use, outperforms coding specialists, enables agentic dev workflows; Block AI efficiencies",
+    detail: "GPT-5.4 introduces native computer-use (Excel/Sheets integration, Playwright libraries, mouse/keyboard via screenshots), 1M token context, and record OSWorld/WebArena benchmarks, automating implementation, debugging, and tool-heavy workflows in IDEs. Outperforms prior coding specialists with efficiency gains; supports enterprise agentic systems for routine junior engineering.[2][3][4]"
   },
   {
     title: "Graphic Designer",
@@ -114,7 +114,7 @@ const JOBS = [
     range: "2031–2035",
     risk: "MODERATE",
     driver: "AI handles scheduling, reporting; stakeholder management stays human",
-    detail: "AI can automate project scheduling, resource allocation, status reporting, risk flagging, and meeting summarization. Tools like Monday.com, Asan"
+    detail: "AI can automate project scheduling, resource allocation, status reporting, risk flagging, and meeting summarization. Tools like Monday.com, As"
   }
 ];
 
