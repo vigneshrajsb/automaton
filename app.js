@@ -6,27 +6,27 @@
 const JOBS = [
   {
     title: "Data Entry Clerk",
-    percent: 89,
-    range: "2025–2027",
+    percent: 92,
+    range: "2025-2026",
     risk: "CRITICAL",
-    driver: "GPT-5.4 computer-use automates Excel/Sheets natively; RPA + LLMs + Block layoffs",
-    detail: "GPT-5.4's native integration with Excel/Google Sheets and computer control (via screenshots/mouse/keyboard) enables full automation of data input, validation, and manipulation in real apps. Builds on RPA/LLMs for structured data; Block's 40% AI layoffs confirm replacement acceleration.[2][3][4]"
+    driver: "GPT-5.4 native computer-use automates Excel/Sheets natively; record OSWorld/WebArena; RPA + LLMs + Block layoffs",
+    detail: "GPT-5.4's native integration with Excel/Google Sheets and computer control (screenshots/mouse/keyboard) enables full automation of data input, validation, and manipulation in real apps. Record scores in OSWorld-Verified and WebArena Verified benchmarks confirm desktop navigation surpassing humans. Builds on RPA/LLMs; Block's 40% AI layoffs confirm replacement acceleration.[1][3][4]"
   },
   {
     title: "Bookkeeper",
-    percent: 85,
-    range: "2025–2028",
+    percent: 88,
+    range: "2025-2027",
     risk: "CRITICAL",
-    driver: "GPT-5.4 Excel/Sheets automation, reconciliation agents; Goldman + Block",
-    detail: "GPT-5.4's computer-use capabilities automate reconciliation, categorization in Excel/Sheets directly. 1M context handles large ledgers; agentic workflows flag discrepancies. Goldman Sachs forecasts and Block's layoffs signal rapid shift.[2][3][4]"
+    driver: "GPT-5.4 Excel/Sheets automation, reconciliation agents; 83% GDPval; Goldman + Block",
+    detail: "GPT-5.4's computer-use capabilities automate reconciliation, categorization in Excel/Sheets directly. 1M context handles large ledgers; agentic workflows flag discrepancies; 83% on GDPval for knowledge work. Goldman Sachs forecasts and Block's layoffs signal rapid shift.[1][3][4]"
   },
   {
     title: "Paralegal / Legal Assistant",
-    percent: 74,
-    range: "2026–2029",
+    percent: 77,
+    range: "2025-2028",
     risk: "CRITICAL",
-    driver: "GPT-5.4 1M context for doc review, agentic workflows; Harvey-like accuracy",
-    detail: "GPT-5.4's 1M token context and reduced hallucinations (33% fewer errors) enhance contract review/research; agentic tools integrate with legal apps via computer-use. Builds on 90% accuracy of prior tools.[2][3]"
+    driver: "GPT-5.4 1M context for doc review, agentic workflows; APEX-Agents law; 33% fewer errors",
+    detail: "GPT-5.4's 1M token context and reduced hallucinations (33% fewer errors) enhance contract review/research; agentic tools integrate with legal apps via computer-use; leads Mercor APEX-Agents for legal analysis. Builds on prior tools' accuracy.[1][3][4]"
   },
   {
     title: "Customer Service Rep",
@@ -38,11 +38,11 @@ const JOBS = [
   },
   {
     title: "Financial Analyst (Junior)",
-    percent: 72,
-    range: "2026–2030",
+    percent: 75,
+    range: "2025-2029",
     risk: "HIGH",
-    driver: "GPT-5.4 1M context for data/models, computer-use for Excel; Goldman + Block",
-    detail: "GPT-5.4 excels in professional knowledge work (83% GDPval), with 1M tokens for aggregating datasets/models and computer-use for Excel analysis/reporting. Automates data aggregation and report generation; Goldman/Block confirm finance acceleration.[2][3][4]"
+    driver: "GPT-5.4 1M context for data/models, computer-use for Excel; 83% GDPval + APEX-Agents finance; Goldman + Block",
+    detail: "GPT-5.4 excels in professional knowledge work (83% GDPval), with 1M tokens for aggregating datasets/models and computer-use for Excel analysis/reporting; leads APEX-Agents for finance skills like financial models. Automates data aggregation and report generation; Goldman/Block confirm finance acceleration.[1][3][4]"
   },
   {
     title: "Tax Preparer",
@@ -94,11 +94,11 @@ const JOBS = [
   },
   {
     title: "Software Engineer (Junior)",
-    percent: 56,
-    range: "2027–2031",
+    percent: 59,
+    range: "2026-2030",
     risk: "HIGH",
-    driver: "GPT-5.4 native computer-use, outperforms coding specialists, enables agentic dev workflows; Block AI efficiencies",
-    detail: "GPT-5.4 introduces native computer-use (Excel/Sheets integration, Playwright libraries, mouse/keyboard via screenshots), 1M token context, and record OSWorld/WebArena benchmarks, automating implementation, debugging, and tool-heavy workflows in IDEs. Outperforms prior coding specialists with efficiency gains; supports enterprise agentic systems for routine junior engineering.[2][3][4]"
+    driver: "GPT-5.4 native computer-use, outperforms coding specialists, record OSWorld/WebArena; agentic dev workflows; Block AI efficiencies",
+    detail: "GPT-5.4 introduces native computer-use (Excel/Sheets, Playwright, mouse/keyboard via screenshots), 1M token context, and record OSWorld/WebArena benchmarks, automating implementation, debugging, and tool-heavy workflows in IDEs. Outperforms prior coding specialists; supports enterprise agentic systems for routine junior engineering.[1][3][4]"
   },
   {
     title: "Graphic Designer",
